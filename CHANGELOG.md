@@ -8,6 +8,16 @@
 
 ### Resolved Issues
 
+* \#63 `Database#collection_names` now returns collections with "system" in
+  the name that aren't core MongoDB system collections. (Hans Hasselberg)
+
+* \#62 Ensure `Connection#alive?` returns false if I/O errors occur. (lowang)
+
+* \#59 Use the current database, not admin, for `getLastError` commands.
+  (Christopher Winslett)
+
+* \#57 Ensure collection name is a string for all operations.
+
 * \#50 Fixed connection issues when connection is disconnected mid call.
   (Jonathan Hyman)
 
